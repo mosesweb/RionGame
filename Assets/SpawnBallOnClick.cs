@@ -8,7 +8,7 @@ public class SpawnBallOnClick : MonoBehaviour
     void Update()
     {
         // Left click (0) or Right click (1)
-        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.anyKeyDown)
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1) || Input.anyKeyDown || Input.touchCount > 0)
         {
             SpawnBall();
         }
