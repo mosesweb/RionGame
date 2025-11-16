@@ -150,6 +150,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   balloonPrefab: {fileID: 3068777481349112288, guid: bf0477e73bf16714ab0407fed8fff4a8, type: 3}
   spawnInterval: 5
+  balloonMaterials:
+  - {fileID: 2100000, guid: ff9fc8f85ae2f4d4cbe036744e1b3afe, type: 2}
+  - {fileID: 2100000, guid: 258c1bacae3bea443adea781f2bc5306, type: 2}
+  - {fileID: 2100000, guid: feb66ade8096bae4d9c550ad7c63e6c6, type: 2}
+  - {fileID: 2100000, guid: 8a4dbc46748a4d04a802f3c0607fff26, type: 2}
 --- !u!4 &126430043
 Transform:
   m_ObjectHideFlags: 0
@@ -365,6 +370,18 @@ PrefabInstance:
     - target: {fileID: 3068777481349112288, guid: bf0477e73bf16714ab0407fed8fff4a8, type: 3}
       propertyPath: m_Name
       value: Balloon
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431037669218452777, guid: bf0477e73bf16714ab0407fed8fff4a8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431037669218452777, guid: bf0477e73bf16714ab0407fed8fff4a8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6431037669218452777, guid: bf0477e73bf16714ab0407fed8fff4a8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6431037669218452777, guid: bf0477e73bf16714ab0407fed8fff4a8, type: 3}
       propertyPath: m_LocalPosition.x

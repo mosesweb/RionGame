@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.31686, y: 0.2218, z: 0.31686}
-  m_LocalScale: {x: 0.8, y: 1.4, z: 0.8}
+  m_LocalScale: {x: 1.2, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6996163902611828267}
@@ -127,7 +127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 1
   pop: {fileID: 8300000, guid: 1a4a87080654f44deaff3e4c2fb2d9e2, type: 3}
-  balloonPrefab: {fileID: 3068777481349112288}
 --- !u!1 &4222332060999257612
 GameObject:
   m_ObjectHideFlags: 0

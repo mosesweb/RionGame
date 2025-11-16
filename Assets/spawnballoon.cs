@@ -4,6 +4,7 @@ public class spawnballoon : MonoBehaviour
 {
     public GameObject balloonPrefab;
     public float spawnInterval = 5f;   // seconds
+    public Material[] balloonMaterials;
 
     void Start()
     {
@@ -18,6 +19,14 @@ public class spawnballoon : MonoBehaviour
             0f
         );
 
-        Instantiate(balloonPrefab, pos, Quaternion.identity);
+        GameObject balloon = Instantiate(balloonPrefab, pos, Quaternion.identity);
+
+        Renderer r = balloon.GetComponentInChildren<Renderer>();
+
+        if (r != null && balloonMaterials.Length > 0)
+        {
+            r.material = balloonMaterials[Random.Range(0, balloonMaterials.Length)];
+        }
     }
+
 }
