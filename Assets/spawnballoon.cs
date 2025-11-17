@@ -22,10 +22,13 @@ public class spawnballoon : MonoBehaviour
         GameObject balloon = Instantiate(balloonPrefab, pos, Quaternion.identity);
 
         Renderer r = balloon.GetComponentInChildren<Renderer>();
-
+        GameObject g = balloon.transform.GetChild(0).gameObject;
+        Renderer renderChild = g.GetComponentInChildren<Renderer>();
         if (r != null && balloonMaterials.Length > 0)
         {
-            r.material = balloonMaterials[Random.Range(0, balloonMaterials.Length)];
+            Material randomMaterial = balloonMaterials[Random.Range(0, balloonMaterials.Length)];
+            renderChild.material = randomMaterial;
+            r.material = randomMaterial;
         }
     }
 
